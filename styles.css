@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+
+}
+
+#navbar {
+    position: fixed;
+    min-width: 14rem;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+    overflow: auto;
+    height: 70%;
+    padding: 0;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+
+
+}
+
+#navbar a {
+    font-size: 1em;
+    display: block;
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#nav-head {
+    text-align: center;
+    font-weight: thin;
+}
+
+#main-doc {
+    margin-left: 15rem;
+    position: absolute;
+    padding: 1.2rem;
+    margin-bottom: 7re.5m;
+}
+
+section {
+    padding: 0.5rem;
+}
+
+section>header {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+section>p {
+    padding: 0.1rem 2rem;
+}
+
+section>li {
+    padding: 0.5rem 3rem;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar ul {
+        height: 8rem;
+        border: none;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 12.3rem;
+        border: none;
+        z-index: 1;
+        border-bottom: 0.15rem solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0rem;
+        margin-top: 13rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
