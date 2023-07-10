@@ -44,7 +44,7 @@ html,body {
 
 
 li a:hover:not(.active) {
-    background-color: rgb(96, 99, 104);
+    background-color: rgb(192, 195, 199);
     color: white;
 }
 
@@ -84,7 +84,7 @@ pre {
     padding-top : 1em;
     overflow-x: auto;
     margin-bottom: 2em;
-    border-left: 2px solid rgb(48, 83, 180);
+    border-left: 2px solid rgb(19, 187, 58);
     ;
     background: #f5f7f9;
     color: #565a6b;
@@ -98,7 +98,7 @@ pre {
 }
 
 .function{
-    color: rgb(10, 166, 244);
+    color: rgb(21, 93, 38);
 }
 
 @media only screen and (max-width: 800px) {
