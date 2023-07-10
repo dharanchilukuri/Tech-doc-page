@@ -1,9 +1,11 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Wix+Madefor+Text:wght@500&display=swap');html,
+
+
+html,body {
     margin: 0;
     padding: 0;
-    background-color: #ddd;
-
+    font-family: 'Hind Siliguri', 'Helvetica', 'Arial', sans-serif;
+    color: #262a2b;
 }
 
 #navbar {
@@ -28,8 +30,7 @@ body {
     list-style-type: none;
     position: relative;
     width: 100%;
-
-
+    font-family: 'Times New Roman', 'georgia', Times, serif;
 }
 
 #navbar a {
@@ -43,57 +44,66 @@ body {
 
 
 li a:hover:not(.active) {
-    background-color: #555;
+    background-color: rgb(154, 173, 204);
     color: white;
 }
 
 #nav-head {
     text-align: center;
     font-weight: thin;
+    color:rgb(7, 19, 40);
 }
 
 #main-doc {
-    margin-left: 15rem;
+    margin-left: 17rem;
     position: absolute;
     padding: 1.2rem;
-    margin-bottom: 7re.5m;
+    font-size: 1.1em;
+    max-width: 40   em; 
 }
 
 section {
-    padding: 0.5rem;
-}
-
-section>header {
-    font-size: 2rem;
-    font-weight: 500;
     padding: 1rem;
 }
 
+section>header {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    font-family:'Wix Madefor Text', Helvetica, sans-serif;
+}
+
 section>p {
-    padding: 0.1rem 2rem;
+    padding-top: 1em;
 }
 
 section>li {
     padding: 0.5rem 3rem;
 }
 
-code {
-    display: block;
-    text-align: left;
-    white-space: pre-line;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
-    background-color: #f7f7f7;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
+pre {
+    padding-top : 1em;
+    overflow-x: auto;
+    margin-bottom: 2em;
+    border-left: 2px solid rgb(48, 83, 180);
+    ;
+    background: #f5f7f9;
+    color: #878ca0;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: initial;
+}
+
+.demo{
+    color:rgb(46, 22, 179);
+
+}
+
+.function{
+    color: rgb(43, 48, 78);
 }
 
 @media only screen and (max-width: 800px) {
     #navbar ul {
-        height: 8rem;
+        height: 9rem;
         border: none;
     }
 
@@ -103,7 +113,7 @@ code {
         padding: 0;
         margin: 0;
         width: 100%;
-        max-height: 12.3rem;
+        max-height: 14rem;
         border: none;
         z-index: 1;
         border-bottom: 0.15rem solid;
@@ -114,9 +124,10 @@ code {
         margin-left: 0rem;
         margin-top: 13rem;
     }
+
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     #main-doc {
         margin-left: -10px;
     }

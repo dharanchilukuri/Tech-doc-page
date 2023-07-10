@@ -13,7 +13,7 @@
         </header>
         <ul>
         <li>
-            <a class="nav-link" href="#Javascript_Introduction">Javascript Introduction</a>
+            <a class="nav-link" href="#Javascript_Introduction">JavaScript Introduction</a>
         </li>
         <li>
             <a class="nav-link" href="#Variables">Variables</a>
@@ -48,14 +48,15 @@
     <body>
         <main id="main-doc">
         <section class="main-section" id="Javascript_Introduction">
-            <header id="Javascript_Introduction">Javascript Introduction</header>
-            <p>lorem -n 50 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum
-            stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet</p>
+            <header id="Javascript_Introduction">JavaScript Introduction</header>
+            <p>JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class
+            functions. While it is most well-known as the scripting language for Web pages, many non-browser environments
+            also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm,
+            single-threaded, dynamic language, supporting object-oriented, imperative, and declarative 
+            (e.g. functional programming) styles.</p>
             <p>Data</p>
-            <p>lorem -n 50 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum
-            stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet</p>
+            <p>JavaScript is not a compiled language, but it is a translated language. The JavaScript Translator (embedded in the browser)
+                 is responsible for translating the JavaScript code for the web browser.</p>
             <li>List data</li>
             <li>List data</li>
         </section>
@@ -78,23 +79,29 @@
         </section>
         <section class="main-section" id="Function_declarations">
             <header id="Function_declarations">Function declarations</header>
-            <p>
-            <code>
-                x = 5;
-                y = 6;
-                z = x + y;
-            </code>
-            <code>
-                x = 5;
-                y = 6;
-                z = x + y;
-            </code>
-            </p>
-            <code>
-                x = 5;
-                y = 6;
-                z = x + y;
-            </code>
+            <pre>
+                <span class="demo">Demo :</span>
+
+                <span class="function">function</span> calcRectArea(width, height) {
+                    return width * height;
+                  }
+                  
+                  console.log(calcRectArea(5, 6));
+                  // Expected output: 30
+            </pre>
+            <pre>
+                <span class="demo">Syntax:</span>
+
+                <span class="function">function</span> name(param0) {
+                    statements
+                  }
+                  <span class="function">function</span> name(param0, param1) {
+                    statements
+                  }
+                  <span class="function">function</span> name(param0, param1, /* … ,*/ paramN) {
+                    statements
+                  }
+            </pre>
         </section>
         <section class="main-section" id="Javascript_and_Java">
             <header id="Javascript_and_Java">Javascript and Java</header>
@@ -127,20 +134,31 @@
             <p>lorem -n 50 lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut
             labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum
             stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet</p>
-            <code>
-            x = 5;
-            y = 6;
-            z = x + y;
-            </code>
+            <pre>
+                creating new object :
+
+                const o = new Object();
+                o.foo = 42;
+                
+                console.log(o);
+                // { foo: 42 }
+            </pre>
         </section>
         <section class="main-section" id="Nested_Objects">
             <header id="Nested_Objects">Nested Objects</header>
-            <code id="code5">
-            x = 5;
-            y = 6;
-            z = x + y;
+            <pre id="pre5">
+                    let x = "";
+            const myObj = {
+            name: "John",
+            age: 30,
+            cars: [
+                {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+                {name:"BMW", models:["320", "X3", "X5"]},
+                {name:"Fiat", models:["500", "Panda"]}
+            ]
+            }
 
-            </code>
+            </pre>
         </section>
 
         </main>
